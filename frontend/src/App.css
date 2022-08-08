@@ -1,0 +1,13 @@
+.formAll {
+  margin: 30px auto 0 auto;
+  width: 280px;
+  box-sizing: border-box;
+}
+
+.fileForm {
+  width: 280px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 30px;
+}

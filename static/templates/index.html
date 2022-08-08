@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создание клиента</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="{% static 'script/index.js' %}"></script>
+</head>
+<body>
+    <div class="root"></div>
+    <form action="">
+        <!-- спрашиваем имя -->
+        <input type="text" name="first_name" placeholder="Имя">
+        <!-- спрашиваем фамилию -->
+        <input type="text"  name="last_name" placeholder="Фамилия">
+        <!-- спрашиваем гражданство -->
+        <select name="position">
+            <option value="" selected disabled hidden>Гражданство</option>
+            <option value="rf">РФ</option>
+            <option value="bel">Беларусь</option>
+            <option value="kz">Казахстан</option>
+            <option value="kirg">Киргизия</option>
+            <option value="uz">Узбекистан</option>
+            <option value="tk">Таджикистан</option>
+            <option value="ua">Украина</option>
+            <option value="dnr">ДНР</option>
+            <option value="lnr">ЛНР</option>
+            <option value="mol">Молдова</option>
+            <option value="arm">Армения</option>
+            <option value="az">Азербайджан</option>
+        </select>
+        <!-- спрашиваем желаемую должность -->
+        <select name="position">
+            <option value="" selected disabled hidden>Желаемая позиция</option>
+            <option value="cassir">Кассир</option>
+            <option value="zal">Торговый зал</option>
+        </select>
+        <!-- спрашиваем возраст -->
+        <input type="text"  name="age" placeholder="Полных лет">
+        <!-- спрашиваем есть ли пашпорт -->
+        <div class="checkbox">
+            <input type="checkbox" class="custom-checkbox" id="passport" name="passport" value="yes">
+            <label for="passport">Паспорт</label>
+        </div>
+        <!-- спрашиваем есть ли СНИЛС -->
+        <div class="checkbox">
+            <input type="checkbox" class="custom-checkbox" id="snils" name="snils" value="yes">
+            <label for="snils">СНИЛС</label>
+        </div>
+        <!-- спрашиваем есть ли МЕДКНИЖКА -->
+        <div class="checkbox">
+            <input type="checkbox" class="custom-checkbox" id="medkniga" name="medkniga" value="yes">
+            <label for="medkniga">Меднижка</label>
+        </div>
+        <!-- спрашиваем есть ли Миграционная карта  -->
+        <div class="checkbox">
+            <input type="checkbox" class="custom-checkbox" id="migrationmap" name="migrationmap" value="yes">
+            <label for="migrationmap">Миграционная карта </label>
+        </div>
+        <!-- спрашиваем есть ли регистрация  -->
+        <div class="checkbox">
+            <input type="checkbox" class="custom-checkbox" id="registration" name="registration" value="yes">
+            <label for="registration">Регистрация</label>
+        </div>
+        <!-- спрашиваем есть ли патент  -->
+        <div class="checkbox">
+            <p>Патент: </p>
+            <input class="custom-radio" name="patent" type="radio" id="moscow" value="green">
+            <label for="moscow">Москва</label>
+            <input class="custom-radio" name="patent" type="radio" id="oblast" value="green">
+            <label for="oblast">МО</label>
+        </div>
+        <!-- textarea для места жительства -->
+        <textarea name="" id="" cols="30" rows="10" placeholder="Место работы"></textarea>
+        <!-- график работы -->
+        <div class="checkbox">
+            <p>График: </p>
+            <input class="custom-radio" name="grafic" type="radio" id="day5" value="green">
+            <label for="day5">5/2</label>
+            <input class="custom-radio" name="grafic" type="radio" id="day6" value="green">
+            <label for="day6">6/1</label>
+        </div>
+        <!-- смена -->
+        <div class="checkbox">
+            <p>Смена: </p>
+            <input class="custom-radio" name="color" type="radio" id="night" value="green">
+            <label for="night">Ночь</label>
+            <input class="custom-radio" name="color" type="radio" id="day" value="green">
+            <label for="day">День</label>
+        </div>
+        <!-- калкулятор ЗП -->
+        <input type="text" value="Ожидаемая зарплата" disabled>
+        <p>Рассказать про обязанности</p>
+        <input type="text" placeholder="Дата и время собеса">
+        <input type="text" placeholder="Номер WhatsApp">
+        <p>"На собеседование возьмите с собой все документы"</p>
+        <!-- textarea для места жительства -->
+        <textarea name="" id="" cols="30" rows="10" placeholder="Комментарий"></textarea>
+        <p>"Спасибо большое, хорошего вам дня, до свидания"</p>
+    </form>
+</body>
+</html>

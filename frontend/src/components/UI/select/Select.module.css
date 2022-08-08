@@ -1,0 +1,28 @@
+.select {
+    height: 30px;
+    width: 280px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    margin-bottom: 15px;
+    color: #767676;
+    font-size: 12px;
+}
+
+.select:focus {
+    outline: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.error {
+    border: 1px solid rgba(180, 2, 2, 0.541);
+}
+
+.error:focus {
+    outline: 1px solid rgba(180, 2, 2, 0.541);
+}
+
+.selected {
+    color: #000;
+}
